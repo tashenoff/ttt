@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>О нас</title>
+    <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+<link rel="preload" href="/css/reset.css" as="style"/>
+<link rel="preload" href="/css/app.css" as="style"/>
+<link rel="stylesheet" href="/css/libs.min.css"/>
+<link rel="stylesheet" href="/css/app.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+
+<script src="https://www.jqueryscript.net/demo/Number-Increment-Animations-with-jQuery-spincrement/jquery.spincrement.js"></script>
+
+
+<script type="text/javascript">
+
+    $(document).ready(function() {
+      
+        
+        $().fancybox({
+  selector : '.owl-item:not(.cloned) a',
+  hash   : false,
+  thumbs : {
+    autoStart : true
+  },
+  buttons : [
+    'zoom',
+    'download',
+    'close'
+  ]
+});
+
+        $("#top").click(function (){
+            $('html, body').animate({
+                scrollTop: $("#home").offset().top
+            }, 2000);
+        });
+
+        $("#down").click(function (){
+            $('html, body').animate({
+                scrollTop: $("#about").offset().top
+            }, 2000);
+        });
+
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        })
+    });
+
+    $(window).scroll(function(){
+        $('nav').toggleClass('bg-custom', $(this).scrollTop() > 50);
+    });
+
+    $(document).ready(function(){
+
+    });
+
+
+</script>
+<nav id='navs' class="navbar navbar-expand-lg navbar-dark fixed-top ">
+    <div class="container">
+    <a class="navbar-brand" href="#">ТОО «Стройинжиниринг Астана»</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Главная <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">
+                    О компании</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">
+                    Услуги</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    Вакансии</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="contact.html">Контакты</a>
+            </li>
+
+
+        </ul>
+     </div>
+        </div>
+
+
+</nav>
+
+
+</head>
+<body>
+
+<div class="wrapper-for-modal" id="example">
+    <div class="shadow-wrapper" id="shadow">
+        <div class="main">
+            <section id="home">
+                <div class="banner banner--ab">
+   
+              <h1  class="text-center text-uppercase p-5 text-white">О нас</h1>
+    
+</div>
+            </section>
+
+            <section>
+                <div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="pt-5">
+                <h3 class="my-4">НЕМНОГО О НАС</h3>
+                <p>
+                    Товарищество с ограниченной ответственностью «Стройинжиниринг Астана» (далее – Товарищество)
+                    осуществляет свою деятельность с 2003 года в соответствии с Уставом и разрешительными документами:
+                    - государственной лицензией № 18012164 от 19.06.2018 на проектирование (технологическое) и (или)
+                    эксплуатацию горных производств (углеводородное сырье), нефтехимических производств, эксплуатацию
+                    магистральных газопроводов, нефтепроводов, нефтепродуктопроводов в сфере нефти и газа:
+
+                </p>
+
+
+
+                <p>
+                    - аттестат № KZ69VEK00008220 от 12.10.2018г. на право проведения работ в области промышленной
+                    безопасности. Товарищество аттестовано с 2009 года (первичный аттестат № 0000691 от 05.02.2009г.).
+
+                </p>
+
+                <p>
+                <h3 class="my-4">Товарищество предлагает оказание услуг/выполнение работ по следующим направлениям:</h3>
+                <ul>
+                    <li>техническое регулирование и стандартизация; </li>
+                    <li>промышленная безопасность;</li>
+                    <li>охрана труда; </li>
+                    <li>расчет и оценка рисков;</li>
+                    <li>нормирование расхода и потерь товарно-материальных ценностей, включая энергетические ресурсы;   </li>
+                    <li>подготовка персонала по промышленной безопасности, охране труда и пожарно-техническому
+                        минимуму, техническому регулированию и стандартизации;</li>
+                    <li>испытания в области неразрушающего контроля;</li>
+                    <li>разработка проектно-сметной документации;</li>
+                    <li>разработка документов в области интегрированной системы менеджмента по СТ РК ISO 9001-2016,
+                        СТ РК ISO 14001-2016, СТ РК OHSAS 18001-2008, СТ РК ISO/IEC 17025-2018;</li>
+                    <li>технический перевод (казахский, английский языки). </li>
+                </ul>
+
+               <p> Товарищество является членом межгосударственных и национальных технических комитетов по стандартизации
+                (МТК 523, ТК 75, ТК 88, ТК 89, ТК 90) и принимает активное участие в их работе.</p>
+
+            <p>На сегодняшний день в Товариществе сформировалась сильная команда профессионалов, и компания смогла
+                зарекомендовать себя в качестве значимого игрока рынка в своем направлении как качественный и надежный
+                исполнитель.
+            </p>
+               <p> Для выполнения работ и оказания услуг в Товариществе имеется доступ к базе законодательных и нормативных
+                правовых актов, а также собственная база научной и технической литературы и статей.</p>
+
+                <h3 class="my-4">Расчет и оценка рисков ведется на программном комплексе ТОКСИ+Risk.</h3>
+
+                <p> К выполнению проектов специалисты Товарищества подходят комплексно (анализ темы проекта, составление
+                плана работ на основе детального анализа имеющейся информации и запросов заказчика и т.д.). Все проекты
+                выполняются в соответствии с действующим законодательством и документами по стандартизации. В
+                Товариществе обобщены существующие и разработаны собственные подходы, применяемые при выполнении
+                проектов.</p>
+
+                <p>Все разрабатываемые проекты Товарищество доводит до логического завершения, получая все необходимые
+                согласования и утверждения в уполномоченных органах и организациях.</p>
+         
+
+        <p> В сфере выполнения работ и оказания услуг Товарищество нацелено на качественное выполнение,
+                удовлетворение запросов клиента, нахождение компромиссных решений.* Этому способствует внедренная
+                интегрированная система менеджмента:</p>
+                <ul>
+               <li> Сертификат соответствия системы менеджмента качества СТ РК ISO (ISO 9001:2015) № KZ.1110954.07.0300411</li>
+                от 22.06.2018г.;
+            <li>Сертификат соответствия системы экологического менеджмента СТ РК ISO (ISO 14001:2015) №
+                KZ.1110954.07.0300412 от 22.06.2018г.;</li>
+            <li>Сертификат соответствия системы менеджмента профессиональной безопасности и здоровья СТ РК OHSAS
+                (OHSAS 18001:2007) № KZ.1110954.07.0300413 от 22.06.2018г..</li>
+            </ul>
+               
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+
+
+       
+
+<div class="banner">  <h3 style="z-index: 2;" class="my-4 text-center text-white">Товарищество не останавливается на достигнутых результатах,</br> а стремится к постоянному росту и развитию!</h3>
+                    
+</div>
+
+<div class="container">
+
+    <div class="container">
+        <h3 class="text-center text-uppercase mt-5">Сертификаты</h3>
+        <div class="row">
+    
+            <div class="col-lg-12 py-5">
+    
+                <div class="owl-carousel owl-theme">
+    
+                 
+                        <a class="fancybox" data-fancybox="images" href="img/1-1.jpg"><img src="img/1-1.jpg" alt="" /></a>
+                      
+                
+    
+                      
+                        <a class="fancybox" data-fancybox="images" href="img/1-2.jpg"><img src="img/1-2.jpg" alt="" /></a>
+                      
+    
+                
+    
+    
+                
+                       
+                        <a class="fancybox" data-fancybox="images" href="img/2.jpg"><img src="img/2.jpg" alt="" /></a>
+                       
+    
+               
+    
+    
+                 
+                        <a class="fancybox" data-fancybox="images" href="img/3.jpg"><img src="img/3.jpg" alt="" /></a>
+                      
+    
+                
+    
+    
+                       
+                        <a class="fancybox" data-fancybox="images" href="img/4.jpg"><img src="img/4.jpg" alt="" /></a>
+                      
+    
+    
+            
+                      
+                        <a class="fancybox" data-fancybox="images" href="img/5.jpg"><img src="img/5.jpg" alt="" /></a>
+                        
+    
+            
+    
+    
+                   
+    
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+</div>
+            </section>
+            <section id="contacs">
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+<footer>
+
+    <div class="position-relative p-5 mt-5 w-100 justify-content-center d-flex  ">
+<div class="footer__form position-absolute p-5 d-flex flex-column bg-primary text-white align-items-center">
+    <img src="/img/mail.svg" alt="">
+    <h5>Контакты</h5>
+        <form class="w-100">
+            <div class="form-group">
+                <label for="exampleInputEmail1">имя</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ваше имя">
+                      </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Номер телефона</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="+7(___)___-__-__">
+            </div>
+            <button type="submit" class="btn btn-secondary mt-3 w-100">отправить</button>
+        </form>
+</div>
+    </div>
+
+    <div class="footer__top">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af8f7c71f126e0a11b51fa5b57a849cf540d3776aef5dec24b26084ca5686cb45&amp;source=constructor" width="100%" height="506" frameborder="0"></iframe>
+
+    </div>
+    <div id="top" class="btn btn-secondary arrow__bottom">
+        <img src="img/top.svg" alt="">
+
+    </div>
+    <div class="footer__bottom">
+        <div class="container">
+            <div class="py-5 text-uppercase text-white d-flex">
+       <p>copyright 2020</p>
+        <p class="ml-auto">powered by Alex</p>
+            </div>
+    </div>
+    </div>
+</footer>
+
+
+
+            </section>
+        </div>
+
+    </div>
+</div>
+</body>
+
+</html>

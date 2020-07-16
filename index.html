@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Главная страница</title>
+    <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+<link rel="preload" href="/css/reset.css" as="style"/>
+<link rel="preload" href="/css/app.css" as="style"/>
+<link rel="stylesheet" href="/css/libs.min.css"/>
+<link rel="stylesheet" href="/css/app.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+
+<script src="https://www.jqueryscript.net/demo/Number-Increment-Animations-with-jQuery-spincrement/jquery.spincrement.js"></script>
+
+
+<script type="text/javascript">
+
+    $(document).ready(function() {
+      
+        
+        $().fancybox({
+  selector : '.owl-item:not(.cloned) a',
+  hash   : false,
+  thumbs : {
+    autoStart : true
+  },
+  buttons : [
+    'zoom',
+    'download',
+    'close'
+  ]
+});
+
+        $("#top").click(function (){
+            $('html, body').animate({
+                scrollTop: $("#home").offset().top
+            }, 2000);
+        });
+
+        $("#down").click(function (){
+            $('html, body').animate({
+                scrollTop: $("#about").offset().top
+            }, 2000);
+        });
+
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        })
+    });
+
+    $(window).scroll(function(){
+        $('nav').toggleClass('bg-custom', $(this).scrollTop() > 50);
+    });
+
+    $(document).ready(function(){
+
+    });
+
+
+</script>
+<nav id='navs' class="navbar navbar-expand-lg navbar-dark fixed-top ">
+    <div class="container">
+    <a class="navbar-brand" href="#">ТОО «Стройинжиниринг Астана»</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Главная <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">
+                    О компании</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">
+                    Услуги</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    Вакансии</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="contact.html">Контакты</a>
+            </li>
+
+
+        </ul>
+     </div>
+        </div>
+
+
+</nav>
+
+
+</head>
+<body>
+
+<div class="wrapper-for-modal" id="example">
+    <div class="shadow-wrapper" id="shadow">
+        <div class="main">
+            <section id="home">
+                <div class="home-video">
+
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="/img/video_compress.mp4" type="video/mp4">
+        <source src="/img/video_compress.webm" type="video/webm" />
+    </video>
+   <div class="home-video__text">
+                 <h3 class="display-5 text-uppercase">Успешные решения и долгосрочный результат.</br>
+                    Исполнение в оптимально сжатые сроки</h3>
+
+   </div>
+
+<!--    <div id="down" class="home-video__arrow"><img src="img/arrow.svg" alt=""></div>-->
+
+</div>
+            </section>
+            <section id="about" class="about">
+                <div class="container-fluid px-0">
+   
+    <div class="row no-gutters">
+        <div class="col-lg-6 col-12">
+            <div class="about__content ">
+            <h3>миссия</h3>
+
+          
+
+            <h5 class="py-5 text-uppercase">Наш приоритет - надежность и качество оказываемых услуг!</h5>
+           <div class="row">
+            <div class="col-lg-2"><img class="w-100" src="/img/logo.svg" alt=""></div>
+            <div class="col-lg-10">
+
+       <p><span>Мы разрабатываем для предприятий Казахстана и СНГ современные, качественные, работающие стандарты, нормы и другие документы, позволяющие оптимизировать производственные процессы и минимизировать расходы!</span></p>
+
+    </div>
+            </div>
+        </div>
+        </div>
+        <div class="col-lg-6 col-12 phone-first"><div class="about__img">
+            <img src="/img/home3.jpg" alt="">
+        </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="about__img">
+                <img src="/img/home2.jpg" alt="">
+            </div>
+        </div>
+        <div class="col-lg-6">
+                    <div class="about__content  p-lg-5">
+                <h3>О компании</h3>
+                        <p><span>
+                            
+                            На протяжении последних 16 лет ТОО «Стройинжиниринг Астана» активно принимает участие в работе национальных и межгосударственных технических комитетов по стандартизации в нефтегазовой промышленности, делится имеющимися знаниями и опытом.
+
+                            Товарищество помогает организациям совершенствоваться, предлагая комплекс услуг /выполнение работ в области технического регулирования и стандартизации, промышленной безопасности и охраны труда, нормирования расхода и потерь товарно-материальных ценностей, проведения испытаний и обучения персонала, а также осуществление технического перевода различного рода документов.
+                            
+                            На сегодняшний день в Товариществе сформировалась сильная команда профессионалов, и компания смогла зарекомендовать себя в качестве значимого игрока рынка в своем направлении как качественный и надежный исполнитель.
+
+                        </span></p>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+            </section>
+
+            <section id="service" class="service bg-primary">
+                <div class="container py-5">
+    <h3 class="my-4 text-center text-white">НАШИ ПРЕИМУЩЕСТВА</h3>
+    <div class="row">
+
+       
+
+
+        <div class="col-lg-4 col-6">
+<div class="service__item my-5">
+    <div class="service__icon"><img src="/img/icon/01.svg" alt=""></div>
+    <div class="service__desc">
+        Эффективные решения<br> и долгосрочный результат
+    </div>
+</div>
+        </div>
+
+        <div class="col-lg-4 col-6">
+            <div class="service__item my-5">
+                <div class="service__icon"><img src="/img/icon/02.svg" alt=""></div>
+                <div class="service__desc">
+                    Комплексный подход<br>
+                    при оказании услуг
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-6">
+            <div class="service__item my-5">
+                <div class="service__icon"><img src="/img/icon/03.svg" alt=""></div>
+                <div class="service__desc">
+                    Особое внимание к специфике<br>
+                    Вашей организации
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-4 col-6">
+            <div class="service__item my-5">
+                <div class="service__icon"><img src="/img/icon/04.svg" alt=""></div>
+                <div class="service__desc">
+                    Исполнение в оптимально сжатые сроки
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-6">
+            <div class="service__item my-5">
+                <div class="service__icon"><img src="/img/icon/05.svg" alt=""></div>
+                <div class="service__desc">
+                    Компетентность и высокий<br>
+                    профессиональный уровень<br>
+                    при оказании услуг<br>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-6">
+            <div class="service__item my-5">
+                <div class="service__icon"><img src="/img/icon/06.svg" alt=""></div>
+                <div class="service__desc">
+                    Консультация </br> в рамках оказываемых услуг
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+</div>
+            </section>
+
+            <section id="about-text">
+                <div class="container py-5">
+    <h3 class="text-center text-uppercase my-5">Наш опыт в цифрах</h3>
+    <div class="row benefits__inner text-center">
+
+
+                             <div class="col-lg-3 col-6">
+
+                    <h1 class="benefits__number font-weight-bold">122</h1>
+                    <p class="benefits__title">СТ РК И ГОСТ</p>
+                </div>
+
+        <div class="col-lg-3 col-6">
+
+                    <h1 class="benefits__number font-weight-bold">500</h1>
+                    <p class="benefits__title">Стандарты организаций</p>
+                </div>
+
+        <div class="col-lg-3 col-6">
+
+                    <h1 class="benefits__number font-weight-bold">15</h1>
+                    <p class="benefits__title">Документы по промышленной безопасности</p>
+                </div>
+
+        <div class="col-lg-3 col-6">
+
+            <h1 class="benefits__number font-weight-bold">165</h1>
+            <p class="benefits__title">НПА и НИОКР</p>
+        </div>
+
+        
+        <div class="col-lg-3 col-6">
+
+            <h1 class="benefits__number font-weight-bold">120</h1>
+            <p class="benefits__title">Нормы и Потери</p>
+        </div>
+
+        <div class="col-lg-3 col-6">
+
+            <h1 class="benefits__number font-weight-bold">2222</h1>
+            <p class="benefits__title">Человек обучено и аттестовано</p>
+        </div>
+
+        <div class="col-lg-3 col-6">
+
+            <h1 class="benefits__number font-weight-bold">1009</h1><span>документов</span>
+            <p class="benefits__title">переведено</p>
+        </div>
+
+
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                var show = true;
+                var countbox = ".benefits__inner";
+                $(window).on("scroll load resize", function () {
+                    if (!show) return false;
+                    var w_top = $(window).scrollTop();
+                    var e_top = $(countbox).offset().top;
+                    var w_height = $(window).height();
+                    var d_height = $(document).height();
+                    var e_height = $(countbox).outerHeight();
+                    if (w_top + 500 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+                        $('.benefits__number').css('opacity', '1');
+                        $('.benefits__number').spincrement({
+                            thousandSeparator: "",
+                            duration: 1200
+                        });
+
+                        show = false;
+                    }
+                });
+
+            });
+        </script>
+           </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-lg-2"><img class="w-100" src="/img/logo.svg" alt=""></div>
+        <div class="col-lg-10">
+            <p class="py-5">Товарищество в рамках договора об оказании консультационных услуг разрабатывает изменения и дополнения в следующие нормативные документы:
+
+                - ГОСТ 27751-2014 «Надежность строительных конструкций и оснований. Основные положения» (скачать(активная ссылка на скачивание при нажатии) первую редакцию);
+                - СНиП 2.01.07-85 «Нагрузки и воздействия» (скачать(активная ссылка на скачивание при нажатии) первую редакцию);
+                - СНиП РК 5.04-23-2002 «Стальные конструкции. Нормы проектирования» (скачать(активная ссылка на скачивание при нажатии) первую редакцию)</p>
+
+
+        </div>
+</div>
+</div>
+
+
+<div class="container">
+    <h3 class="text-center text-uppercase mt-5">Нам доверяют</h3>
+    <div class="row">
+
+        <div class="col-lg-12 py-5">
+
+            <div class="owl-carousel owl-theme">
+
+                <div class="guest__item">
+                   <div class="img-fix"> <img src="img/global.png" alt=""></div>
+                </div>
+
+                <div class="guest__item">
+                    <div class="img-fix">
+                    <img src="img/kmg.png" alt="">
+                    </div>
+
+                </div>
+
+
+                <div class="guest__item">
+                    <div class="img-fix">
+                    <img src="img/kto.png" alt="">
+                    </div>
+
+                </div>
+
+
+                <div class="guest__item">
+                    <div class="img-fix">
+                    <img src="img/petro.png" alt="">
+                    </div>
+
+                </div>
+
+
+                <div class="guest__item">
+                    <div class="img-fix">
+                    <img src="img/hill.png" alt="">
+                    </div>
+
+                </div>
+
+
+                <div class="guest__item">
+                    <div class="img-fix">
+                    <img src="img/hone.png" alt="">
+                    </div>
+
+                </div>
+
+
+                <div class="guest__item">
+                    <div class="img-fix">
+                    <img src="img/inter.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="guest__item">
+                    <div class="img-fix">
+                    <img src="img/kpo.png" alt="">
+                    </div>
+
+                </div>
+
+
+                <div class="guest__item">
+                    <div class="img-fix">
+                    <img src="img/ncoc.png" alt="">
+                    </div>
+
+                </div>
+
+
+                <div class="guest__item">
+                    <div class="img-fix">
+                    <img src="img/agp.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+            </section>
+
+                     <section id="contacs">
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+<footer>
+
+    <div class="position-relative p-5 mt-5 w-100 justify-content-center d-flex  ">
+<div class="footer__form position-absolute p-5 d-flex flex-column bg-primary text-white align-items-center">
+    <img src="/img/mail.svg" alt="">
+    <h5>Контакты</h5>
+        <form class="w-100">
+            <div class="form-group">
+                <label for="exampleInputEmail1">имя</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ваше имя">
+                      </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Номер телефона</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="+7(___)___-__-__">
+            </div>
+            <button type="submit" class="btn btn-secondary mt-3 w-100">отправить</button>
+        </form>
+</div>
+    </div>
+
+    <div class="footer__top">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af8f7c71f126e0a11b51fa5b57a849cf540d3776aef5dec24b26084ca5686cb45&amp;source=constructor" width="100%" height="506" frameborder="0"></iframe>
+
+    </div>
+    <div id="top" class="btn btn-secondary arrow__bottom">
+        <img src="img/top.svg" alt="">
+
+    </div>
+    <div class="footer__bottom">
+        <div class="container">
+            <div class="py-5 text-uppercase text-white d-flex">
+       <p>copyright 2020</p>
+        <p class="ml-auto">powered by Alex</p>
+            </div>
+    </div>
+    </div>
+</footer>
+
+
+
+            </section>
+        </div>
+
+    </div>
+</div>
+</body>
+
+</html>
